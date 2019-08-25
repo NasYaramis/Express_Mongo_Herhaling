@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <title>Products</title>
+  <link rel='stylesheet' href='css/bootstrap.min.css'>
+</head>
+<body>
+<div class='well'>
+  <h2>Add a inhaalexamen</h2>
+  <br/><br/>
+  <form action='/' method='POST'>
+   <table>
+     <tr><td>Naam student: </td><td><input type='text' name='name'></td></tr>
+     <tr><td>Examen : </td><td><input type='text' name='description'></td></tr>
+     <tr><td>Reden : </td><td><input type='text' name='reason' size=100></td></tr>
+     <tr><td>Datum </td><td><input id ='date' type='date' name='date' size=100 readonly></td></tr>
+     <script>
+        var dt = new Date();
+        document.getElementById('date').valueAsDate = new Date();
+      </script></td></tr>
+     <tr><td><button type='submit'>Add</button></td></tr>
+   </table>
+  </form>
+</div>
+</body>
+</html>
