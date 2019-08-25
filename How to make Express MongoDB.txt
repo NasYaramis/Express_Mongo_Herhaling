@@ -1,0 +1,18 @@
+Express
+-------------
+
+npm init
+touch server.js
+npm install
+npm install express -save
+npm install mongodb
+
+
+MONGODB
+------------
+const express = require('express');
+const app = express();
+const bodyParser = require('body-parser');
+app.use(bodyParser());  //--> DIT ZEKER NIET VERGETEN, ANDERS WERKT MONGODB NIET!!!
+const MongoClient = require('mongodb').MongoClient;
+const ObjectId = require('mongodb').ObjectID;
