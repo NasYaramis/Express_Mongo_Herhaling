@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <title>Examen</title>
+</head>
+<body>
+<h2>Resultaat</h2>
+<br/><br/>
+<ul>
+    <% for(var i=0; i < student.length; i++) {%>
+        <li>
+            <span><b>Naam student: </b><%= student[i].name %></span><br />
+            <span><b>Examen : </b><%= student[i].description %></span><br />
+            <span><b>Reden : </b><%= student[i].reason %></span><br />
+            <span><b>Datum : </b><%= student[i].date %></span><br />
+        </li>
+    <% } %>
+</ul>
+<br />
+
+</body>
+</html>
