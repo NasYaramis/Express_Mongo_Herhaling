@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <title>Inhaalexamens</title>
+  <link rel='stylesheet' href='css/bootstrap.min.css'>
+</head>
+<body>
+  <h1>Alle inhaalexamens</h1>
+  
+<a href='/'>Add inhaalexamen</a>&nbsp;
+<br/><br/>
+<a href='/search'>Zoeken op student</a>&nbsp;
+ <br/><br/>
+  <ul class='inhaalexamen'>
+  <% for(var i=0; i < inhaal.length; i++) {%>
+    <li class='inhaalexamen'>
+      <span><b>Naam student : </b><%= inhaal[i].name %></span><br />
+      <span><b>Examen : </b><%= inhaal[i].description %></span><br />
+      <span><b>Reden : </b><%= inhaal[i].reason %></span><br />
+      <span><b>Datum : </b><%= inhaal[i].date %></span><br />
+    </li>
+  <% } %>
+  </ul>
+<br />
+</body>
+</html>
